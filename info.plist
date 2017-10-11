@@ -7,7 +7,34 @@
 	<key>category</key>
 	<string>Productivity</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>D3B08D8D-B097-4F5E-9606-A314DE765CF6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BBD88B60-4A4E-4440-B2F9-86AB4B027BAA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E3D8B2C2-7435-4115-9A1D-F35BC38E9855</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D3B08D8D-B097-4F5E-9606-A314DE765CF6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>Skoda091</string>
 	<key>description</key>
@@ -17,11 +44,99 @@
 	<key>name</key>
 	<string>Pivotal Tracker</string>
 	<key>objects</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>API token {query} saved.</string>
+				<key>title</key>
+				<string>Pivotal Tracker</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>BBD88B60-4A4E-4440-B2F9-86AB4B027BAA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/bin/python set_api_token.py "{token}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D3B08D8D-B097-4F5E-9606-A314DE765CF6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>pvtoken</string>
+				<key>subtext</key>
+				<string>API token can be find in pivotal tracker profile page.</string>
+				<key>text</key>
+				<string>Set user API token.</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E3D8B2C2-7435-4115-9A1D-F35BC38E9855</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
-	<dict/>
+	<dict>
+		<key>BBD88B60-4A4E-4440-B2F9-86AB4B027BAA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>620</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>D3B08D8D-B097-4F5E-9606-A314DE765CF6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>420</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>E3D8B2C2-7435-4115-9A1D-F35BC38E9855</key>
+		<dict>
+			<key>xpos</key>
+			<integer>210</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+	</dict>
 	<key>webaddress</key>
 	<string></string>
 </dict>
